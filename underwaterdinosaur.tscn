@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd3tl10jg7ttd"]
+
+[ext_resource type="Script" path="res://underwaterdinosaur.gd" id="1_n0nky"]
+[ext_resource type="PackedScene" uid="uid://b3wbrsp8w2rjt" path="res://assets/underwaterdinosaur.glb" id="2_leebl"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_88071"]
+
+[node name="underwaterdinosaur" type="Node3D"]
+script = ExtResource("1_n0nky")
+
+[node name="underwaterdinosaur2" parent="." instance=ExtResource("2_leebl")]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_88071")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
