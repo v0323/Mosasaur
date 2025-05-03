@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duaw6fxeju750"
+path="res://.godot/imported/Deep Abyss 4.wav-4fa86311a549fe1bc0fd2b8fc29f53f9.sample"
+
+[deps]
+
+source_file="res://assets/Deep Abyss 4.wav"
+dest_files=["res://.godot/imported/Deep Abyss 4.wav-4fa86311a549fe1bc0fd2b8fc29f53f9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
